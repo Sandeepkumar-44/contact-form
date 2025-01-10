@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.outer{
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner{
+        border:1px solid white;
+        background-color: white;
+        max-width:40%;
+        width:100%;
+        padding:40px;
+        border-radius:10px;
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    
+}
+
+.input > .first-name {
+    width: 50%;
+    padding: 10px  10px 10px 0;
+    
+}
+
+.input > .first-name > input {
+   width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.input > .last-name {
+    width: 50%;
+    padding:10px 0;
+}
+
+.input > .last-name > input {
+    width:100%;
+    padding:8px 10px;
+    border-radius: 5px;
+    
+}
+
+.email{
+    padding: 10px 0 10px 0;
+}
+
+.email > input{
+    width:100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+   
+}
+
+.query{
+    display: flex;
+    padding: 10px 0 10px 0;
+    
+}
+
+.query > .radio1 {
+    border: 1px solid black;
+    border-radius:5px;
+    padding: 8px 10px;
+    width:50%;
+    margin-right: 10px;
+}
+
+.query > .radio2 {
+    border : 1px solid black;
+    border-radius:5px;
+    padding:8px 10px;
+    width:50%;
+}
+
+
+textarea {
+    width:100%;
+}
+.text-area{
+    padding: 10px 0;
+}
+
+.consent{
+    padding: 10px 0;
+}
+
+.button{
+    width: 100%;
+    padding:10px 0;
+    background-color: hsl(169, 82%, 27%);
+    border: hsl(169, 82%, 27%);
+    border-radius: 10px;
+
+}
+
+.button:hover{
+    background-color: hsl(187, 24%, 22%);
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+    .query{
+        display: block;
+        
+    }
+
+    .query > .radio1{
+        width:100%
+    }
+
+    .query > .radio2 {
+        width:100%;
+        margin-top: 10px;
+    }
+
+    .input{
+        display:block;
+    }
+
+    .input > .first-name{
+        width:100%;
+        margin :0; 
+     }
+
+     .input > .last-name{
+        width:100%;
+        
+         
+     }
+    }
+
+     @media screen and (max-width: 320px){
+        .inner{
+            padding:10px;
+            font-size: 12px;
+        }
+        .query > .radio1{
+            padding: 4px;
+        }
+        .query > .radio2{
+            padding:4px;
+        }
+     }
+
+
+
